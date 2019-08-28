@@ -5,5 +5,5 @@ RUN curl -s https://api.github.com/repos/gruntwork-io/terragrunt/releases/latest
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi - \
- && chmod +x 
+ && chmod +x terragrunt_linux_amd64
 COPY terragrunt_linux_amd64 /usr/local/bin/terragrunt
